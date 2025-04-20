@@ -1,0 +1,21 @@
+body {
+    background-color: white
+}
+
+.main {
+    display: grid;
+    grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
+    grid-template-rows: [main-start] 100px [content-start] 100px [content-end] 100px [main-end];
+    background-color: darkslategray;
+    width: 100vw;
+    height: 90vh;
+}
+
+.clickable{
+    display: grid;
+    width: 5vw;
+    height: 9vh;
+    grid-area: content;
+    background-color: lime;
+    color: white
+}
