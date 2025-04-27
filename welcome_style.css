@@ -3,19 +3,57 @@ body {
 }
 
 .main {
-    display: grid;
-    grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
-    grid-template-rows: [main-start] 100px [content-start] 100px [content-end] 100px [main-end];
-    background-color: darkslategray;
+    background-color: #565856;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
 }
 
 .clickable{
-    display: grid;
-    width: 5vw;
-    height: 9vh;
-    grid-area: content;
+    width: 10vw;
+    height: 4vh;
     background-color: lime;
-    color: white
+    color: white;
+    text-align: center
+}
+
+.logotype{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -28%);
+    width: 10vw;
+    height: 15vh;
+}
+
+.start-button{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.cosmetics{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -62%);
+}
+
+.snakes{
+    width: 20vw;
+    height: 80vh;
+}
+
+.first-snake{
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    transform: translate(-25%, 0%);
+}
+
+.second-snake{
+    position: absolute;
+    top: 0%;
+    left: 75%;
+    transform: translate(-75%, 0%);
 }

@@ -3,12 +3,24 @@
   <head>
     <title> Наша Змейка</title>
     <link href="welcome_style.css" rel="stylesheet" />
+    <script>
+      let start_button = document.querySelector(".start-button")
+      start_button.addEventListener('hover', function(){
+        start_button.style.width = "12vw";
+        start_button.style.height = "6vh";
+      })
+      start_button.addEventListener('click', function(){window.location.href = "/index.html"})
+    </script>
   </head>
   <body>
     <div class="main">
-      <img src="logotype.png"/>
-      <span class="clickable"> Начать игру </span>
-      <span class="clickable"> Персонализация </span>
+      <img class="snakes first-snake" src="snake.png"/>
+      <img class="snakes second-snake" src="snake.png"/>
+      <img class="logotype" src="logotype.png"/>
+      <div class="start-button">
+        <span class="clickable start-button"> Начать игру </span>
+      </div>
+      <span class="clickable cosmetics"> Персонализация </span>
     </div>
   </body>
 </html>
