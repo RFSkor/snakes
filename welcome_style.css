@@ -32,11 +32,31 @@ body {
     transform: translate(-50%, -55%);
 }
 
+.start-shadow{
+    position: absolute;
+    top: 55.5%;
+    left: 50.5%;
+    transform: translate(-50.5%, -55.5%);
+    background-color: rgb(0, 90, 0);
+    color: rgb(0, 90, 0);
+    text-align: center
+}
+
 .cosmetics{
     position: absolute;
     top: 62%;
     left: 50%;
     transform: translate(-50%, -62%);
+}
+
+.cosmetics-shadow{
+    position: absolute;
+    top: 62.5%;
+    left: 50.5%;
+    transform: translate(-50.5%, -62.5%);
+    background-color: rgb(0, 90, 0);
+    color: rgb(0, 90, 0);
+    text-align: center
 }
 
 .snakes{
