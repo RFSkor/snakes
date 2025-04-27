@@ -1,5 +1,5 @@
 // рандом
-function getRandomInt(mix, max){
+function getRandomInt(min, max){
     return Math.floor(Math.random() * (max - min)) + min
 }
 
@@ -39,25 +39,26 @@ count = 0;
 context.clearRect(0, 0 , canvas.width, canvas.height);
 
 // заставляем змейку двигаться
-skane.y = snake.dy
-skake.x = snake.dx
+snake.y = snake.dy
+snake.x = snake.dx
 
 snake.cells.unshift({X: snake.x, y: snake.y})
-if (skake.cells.length > snake.maxCells){
-    skake.cells.pop()
+if (snake.cells.length > snake.maxCells){
+    snake.cells.pop()
 }
 
 context.fillStyle = 'red';
-context.fillRect(apple.x, apple,y, grid - 1, grid - 1)
+context.fillRect(apple.x, apple.y, grid - 1, grid - 1)
 
-context.fillStyle = 'green';
-context.fillRect(cell.x, cell.y, grid - 1, gird - 1)
-
+snake.cells.forEach(function (cell, index) {
+    context.fillStyle = 'green';
+    context.fillRect(cell.x, cell.y, grid - 1, grid - 1)
+});
 snake.x = 160;
 snake.x = 160;
 snake.cell =[];
 snake.maxCells = 4;
-skane.dx = grid;
+snake.dx = grid;
 snake.dy = 0
 
 apple.x = getRandomInt(0, 25) * grid;
