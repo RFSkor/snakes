@@ -6,7 +6,7 @@ function getRandomInt(min, max){
 // Змея
 var canvas = document.getElementById('game')
 var context = canvas.getContext('2d');
-var grid = 16
+var grid = 16 // размер клетки
 // скорость змеи
 var count = 0
 
@@ -36,13 +36,14 @@ function loop(){
     context.clearRect(0, 0 , canvas.width, canvas.height);
 
     // заставляем змейку двигаться
-    snake.y = snake.dy
-    snake.x = snake.dx
+    snake.y += snake.dy
+    snake.x += snake.dx
 
-    snake.cells.unshift({X: snake.x, y: snake.y})
+    snake.cells.unshift({x: snake.x, y: snake.y})
     if (snake.cells.length > snake.maxCells){
         snake.cells.pop()
     }
+    console.log(snake.cells)
 
     context.fillStyle = 'red';
     context.fillRect(apple.x, apple.y, grid - 1, grid - 1)
@@ -52,13 +53,7 @@ function loop(){
         context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
     });
 }
-
-snake.x = 160;
-snake.x = 160;
-snake.cell =[];
-snake.maxCells = 4;
-snake.dx = grid;
-snake.dy = 0
+    
 
 apple.x = getRandomInt(0, 25) * grid;
 apple.y = getRandomInt(0, 25) * grid;
