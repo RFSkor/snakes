@@ -15,10 +15,45 @@
   </body>
   <script>
     let start_button = document.querySelector(".start-button")
-    start_button.addEventListener('hover', function(){
-      start_button.style.width += "30px";
-      start_button.style.height += "10px";
-      console.log("Hover event activated!")
+    let start_shadow = document.querySelector(".start-shadow")
+    start_button.addEventListener('mouseenter', function(){
+      start_button.style.width = "125px";
+      start_button.style.height = "35px";
+      start_shadow.style.width = "125px";
+      start_shadow.style.height = "35px";
+    })
+    start_button.addEventListener('mouseleave', function(){
+      start_button.style.width = "100px";
+      start_button.style.height = "25px";
+      start_shadow.style.width = "100px";
+      start_shadow.style.height = "25px";
+    })
+    let cosm_button = document.querySelector(".cosmetics")
+    let cosm_shadow = document.querySelector(".cosmetics-shadow")
+    cosm_button.addEventListener('mouseenter', function(){
+      cosm_button.style.width = "145px";
+      cosm_button.style.height = "35px";
+      cosm_shadow.style.width = "145px";
+      cosm_shadow.style.height = "35px";
+    })
+    cosm_button.addEventListener('mouseleave', function(){
+      cosm_button.style.width = "120px";
+      cosm_button.style.height = "25px";
+      cosm_shadow.style.width = "120px";
+      cosm_shadow.style.height = "25px";
+    })
+    let logo = document.querySelector(".logotype")
+    logo.addEventListener('mouseenter', function(){
+      logo.style.width = "150px";
+      logo.style.height = "125px";
+      logo.style.width = "150px";
+      logo.style.height = "125px";
+    })
+    logo.addEventListener('mouseleave', function(){
+      logo.style.width = "120px";
+      logo.style.height = "100px";
+      logo.style.width = "120px";
+      logo.style.height = "100px";
     })
     start_button.addEventListener('click', function(){window.location.href = "index.html"})
   </script>
