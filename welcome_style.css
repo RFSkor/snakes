@@ -1,3 +1,4 @@
+@media(min-width: 551px){
 body {
     background-color: #565856;
     width: 100vw;
@@ -87,11 +88,21 @@ body {
     left: 75%;
     transform: translate(-75%, 0%);
 }
+}
 
 @media(max-width: 550px){
+
+    .clickable{
+        width: 100vw;
+        height: 4vh;
+        background-color: lime;
+        color: white;
+        text-align: center;
+    }
+    
     .start-button{
         position: absolute;
-        width: 140px;
+        width: 1400px;
         top: 55%;
         left: 50%;
         transform: translate(-50%, -55%);
