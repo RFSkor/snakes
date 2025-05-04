@@ -2,6 +2,10 @@ body {
     background-color: #565856;
     width: 100vw;
     height: 100vh;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 .clickable{
